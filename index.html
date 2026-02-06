@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f19">
+  <title>STEM Lab | Дәстүрлі Энергия - 9 сынып</title>
+  <meta name="description" content="STEM сабағы - Дәстүрлі энергия тақырыбы бойынша интерактивті тапсырмалар. Arduino және Tinkercad негізінде.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <a href="#" class="header-logo">
+      <div class="header-logo-icon">S</div>
+      <div class="header-logo-text">STEM <span>Lab</span></div>
+    </a>
+    <div class="header-teacher">
+      <div class="header-teacher-dot"></div>
+      <strong>Раухат Ағай</strong>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-badge">&#9889; 9 сынып &mdash; STEM сабағы</div>
+    <h1>
+      <em>Дәстүрлі Энергия</em><br>
+      Интерактивті зертхана
+    </h1>
+    <p>Көмір, мұнай, газ және ядролық энергия туралы білім алыңыз. Arduino мен Tinkercad негізіндегі тапсырмаларды орындаңыз.</p>
+    <a href="#theory" class="hero-btn">&#9660; Бастау</a>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">Тапсырма</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">45</div>
+        <div class="hero-stat-label">Минут</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">&#9883;</div>
+        <div class="hero-stat-label">Arduino</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THEORY ===== -->
+  <section class="theory-section" id="theory">
+    <div class="theory-header">
+      <h2>Теориялық <span>бөлім</span></h2>
+      <p>Тапсырмаларды бастамас бұрын, тақырыпты оқып шығыңыз</p>
+    </div>
+
+    <div class="theory-highlight">
+      <h4>&#128218; Дәстүрлі энергия дегеніміз не?</h4>
+      <p><strong>Дәстүрлі энергия</strong> (немесе дәстүрлі отын) &mdash; бұл жер қойнауында миллиондаған жылдар бойы пайда болған табиғи ресурстарды жағу арқылы алынатын энергия. Оларға <strong>көмір, мұнай, табиғи газ</strong> және <strong>ядролық отын (уран)</strong> жатады. Бұл ресурстар <em>қалпына келмейтін</em> деп аталады, өйткені тұтынылу жылдамдығы табиғи түзілу жылдамдығынан әлдеқайда жоғары.</p>
+    </div>
+
+    <div class="theory-grid">
+      <div class="theory-card" style="border-left: 3px solid #f59e0b">
+        <div class="theory-card-icon" style="background: rgba(245,158,11,0.1); color: #f59e0b">&#9874;</div>
+        <h3>Көмір</h3>
+        <p>Жер қойнауынан қазылатын қатты отын. Қазақстанда электр энергиясының ~70%-ы көмірден алынады.</p>
+        <ul>
+          <li>Калориялық қуаты: 29.3 МДж/кг</li>
+          <li>CO2 шығарындысы: 2.42 кг/кг</li>
+          <li>Негізгі кен орындары: Екібастұз, Қарағанды</li>
+        </ul>
+      </div>
+      <div class="theory-card" style="border-left: 3px solid #3b82f6">
+        <div class="theory-card-icon" style="background: rgba(59,130,246,0.1); color: #3b82f6">&#128167;</div>
+        <h3>Мұнай</h3>
+        <p>Жер астындағы қабаттардан алынатын сұйық отын. Бензин, дизель, керосин өндіріледі.</p>
+        <ul>
+          <li>Калориялық қуаты: 41.9 МДж/кг</li>
+          <li>CO2 шығарындысы: 3.07 кг/кг</li>
+          <li>Негізгі кен орындары: Теңіз, Қашаған</li>
+        </ul>
+      </div>
+      <div class="theory-card" style="border-left: 3px solid #06b6d4">
+        <div class="theory-card-icon" style="background: rgba(6,182,212,0.1); color: #06b6d4">&#128293;</div>
+        <h3>Табиғи газ</h3>
+        <p>Тұрмыста жылыту, ас пісіру және электр станцияларында қолданылатын газ түріндегі отын.</p>
+        <ul>
+          <li>Калориялық қуаты: 33.5 МДж/м3</li>
+          <li>CO2 шығарындысы: 1.89 кг/м3</li>
+          <li>Ең таза отын түрі (көмірмен салыстырғанда)</li>
+        </ul>
+      </div>
+      <div class="theory-card" style="border-left: 3px solid #a855f7">
+        <div class="theory-card-icon" style="background: rgba(168,85,247,0.1); color: #a855f7">&#9883;</div>
+        <h3>Ядролық энергия</h3>
+        <p>Уран атомдарының ядросын бөлу арқылы алынатын қуатты энергия көзі.</p>
+        <ul>
+          <li>1 кг уран = ~80 000 000 МДж</li>
+          <li>CO2 шығарындысы: жоқ (тікелей)</li>
+          <li>Қазақстан - әлемдегі уран өндіруші #1</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-highlight">
+      <h4>&#9889; Жылу электр станциясы (ЖЭС) қалай жұмыс істейді?</h4>
+      <p>ЖЭС-тің жұмыс принципі: <strong>Отын жағылады</strong> → Қазанда <strong>су буға айналады</strong> → Бу <strong>турбинаны айналдырады</strong> → Турбинамен байланысқан <strong>генератор электр тогын</strong> шығарады → <strong>Трансформатор</strong> кернеуді арттырып, тұтынушыларға жеткізеді.</p>
+      <div class="theory-formula">
+        P = U &times; I &nbsp;&nbsp;|&nbsp;&nbsp; W = P &times; t &nbsp;&nbsp;|&nbsp;&nbsp; &#951; = W<sub>пайдалы</sub> / W<sub>жалпы</sub> &times; 100%
+      </div>
+    </div>
+
+    <div class="theory-highlight">
+      <h4>&#128187; Arduino және Tinkercad</h4>
+      <p><strong>Arduino</strong> &mdash; бұл микроконтроллер платформасы, ол сенсорлармен, LED-термен, моторлармен жұмыс істейді. <strong>Tinkercad Circuits</strong> &mdash; Arduino тізбектерін виртуалды түрде құрастыруға және код жазуға мүмкіндік беретін онлайн платформа. Энергия мониторингі, температура өлшеу сияқты жобалар жасауға болады.</p>
+      <div class="theory-formula">
+        analogRead() &rarr; 0...1023 &nbsp;&nbsp;|&nbsp;&nbsp; digitalWrite(pin, HIGH/LOW) &nbsp;&nbsp;|&nbsp;&nbsp; pinMode(pin, OUTPUT)
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASKS ===== -->
+  <section class="tasks-container" id="tasks">
+    <div class="tasks-title">
+      <h2>Интерактивті <span>тапсырмалар</span></h2>
+      <p>Барлық тапсырмаларды ретімен орындаңыз. Әр тапсырманы тексеріп, нәтижесін көруге болады.</p>
+    </div>
+
+    <!-- TASK 1 - Match Energy Sources -->
+    <div class="task" id="task-match">
+      <div class="task-head">
+        <div class="task-num">01</div>
+        <div class="task-head-text">
+          <h3>Энергия көздерін сәйкестендіру</h3>
+          <p>Сол жақтағы энергия көзін таңдап, оң жақтағы сипаттамамен сәйкестендіріңіз</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <div class="match-grid">
+          <div class="match-left" id="match-left">
+            <div class="match-item" onclick="matchSelect('left','Komir',this)">&#9874; Көмір</div>
+            <div class="match-item" onclick="matchSelect('left','Munai',this)">&#128167; Мұнай</div>
+            <div class="match-item" onclick="matchSelect('left','Gas',this)">&#128293; Табиғи газ</div>
+            <div class="match-item" onclick="matchSelect('left','Yadro',this)">&#9883; Ядролық энергия</div>
+          </div>
+          <div class="match-right" id="match-right">
+            <div class="match-item" onclick="matchSelect('right','nuclear-desc',this)">Атом ядросының бөлінуінен алынатын күш</div>
+            <div class="match-item" onclick="matchSelect('right','coal-desc',this)">Жер астынан қазып алынатын қатты отын</div>
+            <div class="match-item" onclick="matchSelect('right','gas-desc',this)">Тұрмақты жылыту мен электр станцияларында қолданылатын газ</div>
+            <div class="match-item" onclick="matchSelect('right','oil-desc',this)">Сүзгіштен өтіп бензин мен дизель алынатын сұйық отын</div>
+          </div>
+        </div>
+      </div>
+      <div class="result" id="match-result"></div>
+    </div>
+
+    <!-- TASK 2 - Circuit Builder -->
+    <div class="task" id="task-circuit">
+      <div class="task-head">
+        <div class="task-num">02</div>
+        <div class="task-head-text">
+          <h3>LED тізбегін құрастыр</h3>
+          <p>Arduino-да LED-ті жағу тізбегінің компоненттерін дұрыс ретпен орналастырыңыз (Tinkercad стилінде)</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <div class="circuit-slots" id="circuit-slots">
+          <span style="color:var(--text-dim);font-size:13px;">Компоненттерді ретімен басыңыз...</span>
+        </div>
+        <div class="circuit-bank" id="circuit-bank">
+          <div class="circuit-chip" data-key="resistor" onclick="circuitAdd('resistor',this)">Резистор 220&#937;</div>
+          <div class="circuit-chip" data-key="gnd" onclick="circuitAdd('gnd',this)">GND (жер)</div>
+          <div class="circuit-chip" data-key="led" onclick="circuitAdd('led',this)">LED</div>
+          <div class="circuit-chip" data-key="battery" onclick="circuitAdd('battery',this)">5V (Қорек)</div>
+          <div class="circuit-chip" data-key="wire2" onclick="circuitAdd('wire2',this)">Сым (қара)</div>
+          <div class="circuit-chip" data-key="wire1" onclick="circuitAdd('wire1',this)">Сым (қызыл)</div>
+        </div>
+      </div>
+      <div class="task-actions">
+        <button class="btn btn-primary" onclick="circuitCheck()">Тексеру</button>
+        <button class="btn btn-secondary" onclick="circuitReset()">Қайта бастау</button>
+      </div>
+      <div class="result" id="circuit-result"></div>
+    </div>
+
+    <!-- TASK 3 - Power Plant Process -->
+    <div class="task" id="task-pp">
+      <div class="task-head">
+        <div class="task-num">03</div>
+        <div class="task-head-text">
+          <h3>ЖЭС-тің жұмыс тәртібі</h3>
+          <p>Жылу электр станциясының процестерін дұрыс ретпен орналастырыңыз (сүйреп апарыңыз)</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <div class="process-items" id="pp-items">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+      <div class="task-actions">
+        <button class="btn btn-primary" onclick="ppCheck()">Тексеру</button>
+      </div>
+      <div class="result" id="pp-result"></div>
+    </div>
+
+    <!-- TASK 4 - Sort Energy -->
+    <div class="task" id="task-sort">
+      <div class="task-head">
+        <div class="task-num">04</div>
+        <div class="task-head-text">
+          <h3>Энергия түрлерін сұрыпта</h3>
+          <p>Әр энергия көзін &laquo;Дәстүрлі&raquo; немесе &laquo;Жаңартылатын&raquo; деп бөліңіз</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <div class="sort-container">
+          <div class="sort-progress" id="sort-dots"></div>
+          <div class="sort-current" id="sort-current"></div>
+          <div class="sort-buttons" id="sort-btns">
+            <button class="sort-btn traditional" onclick="sortAnswer('traditional')">&#9874; Дәстүрлі</button>
+            <button class="sort-btn renewable" onclick="sortAnswer('renewable')">&#9728; Жаңартылатын</button>
+          </div>
+        </div>
+      </div>
+      <div class="task-actions" style="margin-top:12px">
+        <button class="btn btn-secondary" onclick="sortReset()">Қайта бастау</button>
+      </div>
+      <div class="result" id="sort-result"></div>
+    </div>
+
+    <!-- TASK 5 - Energy Calculator -->
+    <div class="task" id="task-calc">
+      <div class="task-head">
+        <div class="task-num">05</div>
+        <div class="task-head-text">
+          <h3>Энергия калькуляторы</h3>
+          <p>Отын түрін, мөлшерін және ПӘК-ті таңдап, шығатын энергияны есептеңіз</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <div class="calc-grid">
+          <div class="calc-field">
+            <label>Отын түрі</label>
+            <select id="calc-fuel">
+              <option value="">Таңдаңыз...</option>
+              <option value="coal">Көмір</option>
+              <option value="oil">Мұнай</option>
+              <option value="gas">Табиғи газ</option>
+              <option value="uranium">Уран</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label>Мөлшері (кг / м3)</label>
+            <input type="number" id="calc-amount" placeholder="Мысалы: 1000" min="0">
+          </div>
+          <div class="calc-field calc-slider">
+            <label>
+              <span>ПӘК (пайдалы әсер коэффициенті)</span>
+              <strong id="eff-val">35%</strong>
+            </label>
+            <input type="range" id="calc-eff" min="10" max="95" value="35" oninput="updateEff(this.value)">
+          </div>
+        </div>
+      </div>
+      <div class="task-actions">
+        <button class="btn btn-primary" onclick="calcEnergy()">Есептеу</button>
+      </div>
+      <div class="calc-results" id="calc-results">
+        <div class="calc-result-card">
+          <div class="value" id="calc-total">-</div>
+          <div class="unit">МДж (жалпы)</div>
+        </div>
+        <div class="calc-result-card">
+          <div class="value" id="calc-kwh">-</div>
+          <div class="unit">кВт*с (электр)</div>
+        </div>
+        <div class="calc-result-card">
+          <div class="value" id="calc-co2">-</div>
+          <div class="unit">кг CO2</div>
+        </div>
+      </div>
+      <div class="result" id="calc-result"></div>
+    </div>
+
+    <!-- TASK 6 - Code Debug -->
+    <div class="task" id="task-code">
+      <div class="task-head">
+        <div class="task-num">06</div>
+        <div class="task-head-text">
+          <h3>Arduino кодындағы қатені тап</h3>
+          <p>Тинкеркадтағы Arduino кодын оқып, қатені табыңыз</p>
+        </div>
+      </div>
+      <div class="task-body">
+        <h4 style="font-size:15px;margin-bottom:12px;color:var(--text)" id="code-title"></h4>
+        <div class="code-block">
+          <pre id="code-display"></pre>
+        </div>
+        <div class="code-options" id="code-options">
+          <!-- Rendered by JS -->
+        </div>
+        <div class="quiz-explanation" id="code-explanation"></div>
+      </div>
+      <div class="task-actions">
+        <button class="btn btn-primary" id="code-next-btn" onclick="codeNext()" style="display:none">Келесі &#8594;</button>
+      </div>
+      <div class="result" id="code-result"></div>
+    </div>
+
+    <!-- TASK 7 - Final Quiz -->
+    <div class="task" id="task-quiz">
+      <div class="task-head">
+        <div class="task-num">07</div>
+        <div class="task-head-text">
+          <h3>Қорытынды тест</h3>
+          <p>Білімді тексеретін 8 сұрақ. 62% жинасаңыз, тапсырма орындалады.</p>
+        </div>
+      </div>
+      <div class="task-body" id="quiz-body">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quiz-progress-fill" style="width:0%"></div>
+        </div>
+        <div class="quiz-question-num" id="quiz-qnum"></div>
+        <div class="quiz-question-text" id="quiz-qtext"></div>
+        <div class="quiz-options" id="quiz-opts"></div>
+        <div class="quiz-explanation" id="quiz-explain"></div>
+        <button class="btn btn-primary" id="quiz-next-btn" onclick="quizNext()" style="display:none">Келесі &#8594;</button>
+      </div>
+      <div class="quiz-final" id="quiz-final"></div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 STEM Lab &mdash; <strong>Раухат Ағай</strong> | 9 сынып | Дәстүрлі Энергия</p>
+    <p style="margin-top:6px">
+      <a href="https://www.tinkercad.com/circuits" target="_blank" rel="noopener">Tinkercad Circuits</a> &nbsp;&bull;&nbsp;
+      <a href="https://www.arduino.cc/reference/en/" target="_blank" rel="noopener">Arduino Reference</a>
+    </p>
+  </footer>
+
+  <!-- Progress Tracker -->
+  <div class="progress-tracker">
+    <span class="progress-tracker-icon">&#9889;</span>
+    <span class="count" id="progress-count">0 / 7</span>
+    <span style="color:var(--text-dim)">орындалды</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
